@@ -3,7 +3,7 @@ import { DataGrid } from "@mui/x-data-grid";
 
 export const DisplayTable = ({ data }) => {
     const columns = [
-        { field: "id", headerName: "ID", width: 50 },
+        { field: "_id", headerName: "ID", width: 50 },
         { field: "nombre", headerName: "Producto", width: 320 },
         { field: "precio", headerName: "Precio", width: 100 },
         { field: "categoria", headerName: "Categoría", width: 180 },
