@@ -38,7 +38,7 @@ function App() {
         e.preventDefault();
         const formData = new FormData(e.target);
         const formValues = Object.fromEntries(formData);
-        formValues.id = data.length + 1;
+        formValues._id = data.length + 1;
 
         setData([...data, formValues]);
     }
