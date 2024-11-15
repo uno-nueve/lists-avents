@@ -11,7 +11,7 @@ export const DisplayTable = ({ data }) => {
 
     return (
         <Paper sx={{ minWidth: 650, width: "100%", p: 3 }}>
-            <DataGrid rows={data} columns={columns} sx={{ border: 0 }} />
+            <DataGrid rows={data} columns={columns} sx={{ border: 0 }} getRowId={(r) => r._id} />
         </Paper>
     );
 };
